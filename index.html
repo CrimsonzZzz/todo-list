@@ -1,18 +1,26 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>proyecto</title>
-  </head>
-  <body>
-    <div id="app">
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>proyecto</title>
+    </head>
+    <body class="bg-cyan-300 min-h-screen flex items-center justify-center">
+      <div id="app">
+      <div class="bg-gray-50 p-6 rounded-lg shadow-lg w-96">
 
-        <h1 class="flex flex-col text-amber-300 ">Holaaaaaaa</h1>
+          <h1 class=" text-black text-center text-4xl">To-Do list</h1>
 
+      <div class="flex gap-2 mb-4">
+          <input type="text" placeholder="Add your new task" class="w-full p-2 border rounded-lg">
 
-    </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
-</html>
+          <button class="bg-black text-white px-4 rounded-lg">➕</button>
+      </div>
+          
+          <ul id="taskList" class="mt-4"></ul>
+      </div>
+      </div>
+      <script type="module" src="/src/main.js"></script>
+    </body>
+  </html>
